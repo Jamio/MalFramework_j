@@ -1,0 +1,37 @@
+name: Arma
+
+on:
+    push:
+        branches:
+            - master
+        paths-ignore:
+            - ".github/**"
+            - "docs/**"
+            - "mission_framework/core/main/script_version.hpp"
+            - "tools/**"
+            - ".editorconfig"
+            - ".gitignore"
+    pull_request:
+
+jobs:
+    validate:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the source code
+              uses: actions/checkout@v2
+
+            - name: Validate SQF
+              run: python3 tools/sqf_validator.py
+
+            - name: Check for BOM
+              uses: arma-actions/bom-check@v1
+
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the source code
+              uses: actions/checkout@master
+
+            - name: Lint (sqflint)
+              uses: arma-actions/sqflint@master
+              continue-on-error: true # No failure due to many false-positives

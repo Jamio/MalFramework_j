@@ -22,7 +22,7 @@ If something is broken, open a new issue on **[GitHub](https://github.com/Misfit
 
 **For more information, [visit the Wiki.](https://github.com/Misfit-Ha/MalFramework-m/wiki)**
 
-**For additional tools, [visit the Github Page.](https://misfit-ha.github.io/MalFramework-m)**
+**For additional tools, [visit the Github Page.](https://jamio.github.io/MalFramework_j/)**
 
 </br>
 

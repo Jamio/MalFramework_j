@@ -247,3 +247,8 @@ GVARMAIN(moduleUnitTracking) = false;  // Coop & TvT
 
 // Vehicle respawn
 GVARMAIN(moduleVehicleRespawn) = false;  // Coop & TvT
+
+
+/* ------------------------------------------------------ Jamios Additions -------------------------------- */
+
+GVARMAIN(moduleEarplugs) = true;  // Coop & TvT

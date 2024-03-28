@@ -4,7 +4,7 @@
         <img src="https://img.shields.io/github/v/release/Jamio/MalFramework_j?label=latest%20release" alt="latest-release">
     </a>
         <a href="https://github.com/Jamio/MalFramework_j/issues">
-        <img src="https://img.shields.io/github/issues/Misfit-Ha/MalFramework-m" alt="open-issues">
+        <img src="https://img.shields.io/github/issues/Jamio/MalFramework_j" alt="open-issues">
     </a>
     <a href="https://github.com/Malbryn/Jamio/MalFramework_j/workflows/build.yml">
         <img src="https://img.shields.io/github/workflow/status/Misfit-Ha/MalFramework-m/Build" alt="build-status">

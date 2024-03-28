@@ -136,6 +136,10 @@ class GVARMAIN(Safety) {
     init = PATH_PRE(safety);
 };
 
+class GVARMAIN(Safezone) {
+    init = PATH_PRE(safezone);
+};
+
 class GVARMAIN(SetupTimer) {
     init = PATH_PRE(setup_timer);
 };

@@ -19,4 +19,4 @@ ADDON = true;
 private _version = VERSION_BUILD;
 
 [COMPONENT_STR, "DEBUG", "*** DEBUG MODE IS ACTIVE ***", true] call FUNC(log);
-[COMPONENT_STR, "INFO", format ["MalFramework v%1", _version], false] call FUNC(log);
+[COMPONENT_STR, "INFO", format ["MalFramework v%1 Jamio's Fork", _version], false] call FUNC(log);

@@ -27,12 +27,12 @@ if (hasInterface && {!isDedicated}) then {
     GVAR(gameMasters) pushBack (getPlayerUID player);
 };
 
-// Add the mission makers
-private _missionMakerUIDs = GETPAVAR(GVARMAIN(missionMaker),[]);
+// Add the mission maker
+private _missionMakerUID = GETPAVAR(GVARMAIN(missionMaker),"");
 
-{
-    GVAR(gameMasters) pushBackUnique _x;
-} forEach _missionMakerUIDs;
+if (_missionMakerUID != "") then {
+    GVAR(gameMasters) pushBackUnique _missionMakerUID;
+};
 
 // Find the admin
 private _adminArray = allUsers select { 0 < (getUserInfo _x) select 8 };

@@ -29,13 +29,10 @@ private _adminUID = "";
 private _adminName = "N/A";
 
 if (count GVAR(gameMasters) > 1) then {
-    private _missionMakerUIDs = GETPAVAR(GVARMAIN(missionMaker),[]);
-    private _filtered = GVAR(gameMasters);
-    {
-        if (_x in _missionMakerUIDs) then {
-            _filtered = _filtered - [_x];
-        };
-    } forEach GVAR(gameMasters);
+    private _missionMakerUID = GETPAVAR(GVARMAIN(missionMaker),"");
+    private _filtered = GVAR(gameMasters) select {
+        _x isNotEqualTo _missionMakerUID
+    };
 
     _adminUID = _filtered select 0;
     _admin = [_adminUID] call BFUNC(getUnitByUID);

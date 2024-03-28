@@ -51,9 +51,6 @@ if (_rearmCount != -1) then {
                 12
             ] call AFUNC(common,displayTextStructured);
         };
-
-        // in case not filled due to an error
-        _vehicle setVehicleAmmo 1;
     },
     {
         param [0] params ["_object", "_vehicle", "_player", "_rearmCount"];

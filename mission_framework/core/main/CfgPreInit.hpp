@@ -64,6 +64,10 @@ class GVARMAIN(Gear) {
     init = PATH_PRE(gear);
 };
 
+class GVARMAIN(GrassCutter) {
+    init = PATH_PRE(grass_cutter);
+};
+
 class GVARMAIN(Hostage) {
     init = PATH_PRE(hostage);
 };
@@ -100,10 +104,6 @@ class GVARMAIN(MapCover) {
     init = PATH_PRE(map_cover);
 };
 
-class GVARMAIN(ObjectMarker) {
-    init = PATH_PRE(object_marker);
-};
-
 class GVARMAIN(MarkerSide) {
     init = PATH_PRE(marker_side);
 };
@@ -134,10 +134,6 @@ class GVARMAIN(Retreat) {
 
 class GVARMAIN(Safety) {
     init = PATH_PRE(safety);
-};
-
-class GVARMAIN(Safezones) {
-    init = PATH_PRE(safezones);
 };
 
 class GVARMAIN(SetupTimer) {

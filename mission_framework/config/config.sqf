@@ -50,7 +50,7 @@ GVARMAIN(moduleGear) = true;  // Coop & TvT
 EGVAR(gear,useArsenalWhitelist) = false;  // Allows the creation of arsenal objects with custom whitelist based on the player's role
 EGVAR(gear,saveGearInArsenal) = false;  // Should the player's gear be saved (and applied after respawn) after the arsenal is closed
 EGVAR(gear,removeDefaultGear) = true;  // Should the default gear (that the unit has in the editor) be removed if pre-defined gear is disabled
-EGVAR(gear,useLoadouts) = false;  // Apply the pre-defined gear (defined in config\gear\)
+EGVAR(gear,useLoadouts) = true;  // Apply the pre-defined gear (defined in config\gear\)
 EGVAR(gear,enableAlternativeLoadouts) = false;  // Enable alternative loadouts
 EGVAR(gear,loadoutHash) = [  // Key-value pairs (STRING - ARRAY OF STRINGS) for the alternative loadouts (defined in config\gear\)
     ["SL", ["SL-2", "SL-3"]],
@@ -136,6 +136,11 @@ EGVAR(custom_channel,channelName) = "JTAC channel";  // Name of the channel
 EGVAR(custom_channel,channelColour) = [0.8, 0, 0.5, 1];  // Colour of the channel (RGBA format, default: FK pink)
 
 
+// Grass cutter
+GVARMAIN(moduleGrassCutter) = false;  // Coop & TvT
+EGVAR(grass_cutter,requireEntrenchingTool) = true; // Require entrenching tool
+
+
 // Hostage
 GVARMAIN(moduleHostage) = false;  // Coop & TvT
 
@@ -149,7 +154,7 @@ GVARMAIN(moduleIntel) = false;  // Coop
 
 
 // Intro text
-GVARMAIN(moduleIntroText) = false;  // Coop & TvT
+GVARMAIN(moduleIntroText) = true;  // Coop & TvT
 EGVAR(intro_text,title) = "TEST TITLE";  // Title
 EGVAR(intro_text,date) = "TEST DATE";  // Date
 EGVAR(intro_text,location) = "TEST LOCATION";  // Location
@@ -174,12 +179,10 @@ GVARMAIN(moduleLOSTool) = false;  // Coop & TvT
 
 
 // Map cover
-GVARMAIN(moduleMapCover) = false;  // Coop & TvT
+GVARMAIN(moduleMapCover) = true;  // Coop & TvT
 EGVAR(map_cover,aoMarker) = "mrk_ao";  // Name of the AO marker
 EGVAR(map_cover,colour) = "Color4_FD_F";  // Colour of the covered area
 
-// Mark custom objects
-GVARMAIN(moduleMarkObjects) = false;  // Coop & TvT
 
 // Marker side
 GVARMAIN(moduleMarkerSide) = false;  // TvT
@@ -227,7 +230,7 @@ EGVAR(setup_timer,timerRedfor) = 60;  // Setup timer for the REDFOR side
 
 
 // Snowfall
-GVARMAIN(moduleSnowfall) = false;  // Coop & TvT
+GVARMAIN(moduleSnowfall) = true;  // Coop & TvT
 EGVAR(snowfall,maxDensity) = 50;  // Intensity of the snowfall
 
 
@@ -248,14 +251,6 @@ GVARMAIN(moduleUnitTracking) = false;  // Coop & TvT
 // Vehicle respawn
 GVARMAIN(moduleVehicleRespawn) = false;  // Coop & TvT
 
+/* __________________ Jamio's Additions ___________________________ */
 
-/* ------------------------------------------------------ Jamios Additions -------------------------------- */
-
-GVARMAIN(moduleEarplugs) = true;  // Coop & TvT
-
-GVARMAIN(moduleSafezones) = true; // Coop & TvT
-EGVAR(safezones,safezone_message) = "stop that"; // Message displayed when players fire in Safezone
-EGVAR(safezones,safe_areas) = [ // Centre of safe zone and distance from object
-    ["safeZoneMarker1", 300],
-    ["safeZoneMarker2", 150] 
-];
+GVARMAIN(moduleEarplugs) = true;

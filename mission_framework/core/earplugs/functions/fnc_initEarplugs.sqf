@@ -45,7 +45,6 @@ if (isNil "NreEarplugsActive") then {
 		_id = (_this select 0) addAction [("<t color=""#00FF00"">Insert Earplugs</t>"),NreEarplugsPath+"fnc_initEarplugs.sqf","",5,false,true,"",""];
 		(_this select 0) setVariable ["NreEarplugsAction", _id];
 	}];
-	breakto "firstInitFinished";
 };
 
 if ( NreEarplugsActive == 1 ) then {
@@ -65,5 +64,3 @@ if ( NreEarplugsActive == 1 ) then {
 	_id = player addAction [("<t color=""#FF0000"">Remove Earplugs</t>"),NreEarplugsPath+"fnc_initEarplugs.sqf","",5,false,true,"",""];
 	player setVariable ["NreEarplugsAction", _id];
 };
-
-scopename "firstInitFinished";

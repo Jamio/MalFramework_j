@@ -96,6 +96,11 @@ class GVARMAIN(Gear) {
     serverInit = PATH_POST_SERVER(gear);
 };
 
+class GVARMAIN(GrassCutter) {
+    init = PATH_POST(grass_cutter);
+    clientInit = PATH_POST_CLIENT(grass_cutter);
+    serverInit = PATH_POST_SERVER(grass_cutter);
+};
 
 class GVARMAIN(Hostage) {
     init = PATH_POST(hostage);
@@ -151,12 +156,6 @@ class GVARMAIN(MapCover) {
     serverInit = PATH_POST_SERVER(map_cover);
 };
 
-class GVARMAIN(ObjectMarker) {
-    init = PATH_POST(object_marker);
-    clientInit = PATH_POST_CLIENT(object_marker);
-    serverInit = PATH_POST_SERVER(object_marker);
-};
-
 class GVARMAIN(MarkerSide) {
     init = PATH_POST(marker_side);
     clientInit = PATH_POST_CLIENT(marker_side);
@@ -203,12 +202,6 @@ class GVARMAIN(Safety) {
     init = PATH_POST(safety);
     clientInit = PATH_POST_CLIENT(safety);
     serverInit = PATH_POST_SERVER(safety);
-};
-
-class GVARMAIN(Safezones) {
-    init = PATH_POST(safezones);
-    clientInit = PATH_POST_CLIENT(safezones);
-    serverInit = PATH_POST_SERVER(safezones);
 };
 
 class GVARMAIN(SetupTimer) {

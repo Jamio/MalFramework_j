@@ -66,6 +66,12 @@ class GVARMAIN(CustomChannel) {
     serverInit = PATH_POST_SERVER(custom_channel);
 };
 
+class GVARMAIN(Earplugs) {
+    init = PATH_POST(earplugs);
+    clientInit = PATH_POST_CLIENT(earplugs);
+    serverInit = PATH_POST_SERVER(earplugs);
+};
+
 class GVARMAIN(EndConditions) {
     init = PATH_POST(end_conditions);
     clientInit = PATH_POST_CLIENT(end_conditions);

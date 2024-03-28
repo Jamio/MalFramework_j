@@ -44,6 +44,10 @@ class GVARMAIN(CustomChannel) {
     init = PATH_PRE(custom_channel);
 };
 
+class GVARMAIN(Earplugs) {
+    init = PATH_PRE(earplugs);
+};
+
 class GVARMAIN(EndConditions) {
     init = PATH_PRE(end_conditions);
 };

@@ -51,7 +51,7 @@ if (isNil "NreEarplugsActive") then {
 if ( NreEarplugsActive == 1 ) then {
 	NreEarplugsActive = 0;
 	1 fadeSound 1;
-	hint format	[ localize "STR_NREEP_OUT_HINT" ];
+	hint "Earplugs Removed";
 	_id = player getVariable "NreEarplugsAction";
 	player removeAction _id;
 	_id = player addAction [("<t color=""#00FF00"">Insert Earplugs</t>"),NreEarplugsPath+"fnc_initEarplugs.sqf","",5,false,true,"",""];
@@ -59,7 +59,7 @@ if ( NreEarplugsActive == 1 ) then {
 } else {
 	NreEarplugsActive = 1;
 	1 fadeSound 0.1;
-	hint format	[ localize "STR_NREEP_IN_HINT" ];
+	hint "Earplugs Inserted";
 	_id = player getVariable "NreEarplugsAction";
 	player removeAction _id;
 	_id = player addAction [("<t color=""#FF0000"">Remove Earplugs</t>"),NreEarplugsPath+"fnc_initEarplugs.sqf","",5,false,true,"",""];

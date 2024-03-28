@@ -205,6 +205,12 @@ class GVARMAIN(Safety) {
     serverInit = PATH_POST_SERVER(safety);
 };
 
+class GVARMAIN(Safezones) {
+    init = PATH_POST(safezones);
+    clientInit = PATH_POST_CLIENT(safezones);
+    serverInit = PATH_POST_SERVER(safezones);
+};
+
 class GVARMAIN(SetupTimer) {
     init = PATH_POST(setup_timer);
     clientInit = PATH_POST_CLIENT(setup_timer);

@@ -252,3 +252,10 @@ GVARMAIN(moduleVehicleRespawn) = false;  // Coop & TvT
 /* ------------------------------------------------------ Jamios Additions -------------------------------- */
 
 GVARMAIN(moduleEarplugs) = true;  // Coop & TvT
+
+GVARMAIN(moduleSafezones) = true; // Coop & TvT
+EGVAR(safezones,safezone_message) = "stop that"; // Message displayed when players fire in Safezone
+EGVAR(safezones,safe_areas) = [ // Centre of safe zone and distance from object
+    ["safeZoneMarker1", 300],
+    ["safeZoneMarker2", 150] 
+];

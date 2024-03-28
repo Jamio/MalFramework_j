@@ -253,6 +253,7 @@ GVARMAIN(moduleVehicleRespawn) = false;  // Coop & TvT
 
 /* __________________ Jamio's Additions ___________________________ */
 
+// Earplugs
 GVARMAIN(moduleEarplugs) = true;
 
 // Safezones
